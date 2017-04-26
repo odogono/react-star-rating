@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import cx from 'classnames';
+import PropTypes from 'prop-types';
 
 function isFloat(n) {
   return n === Number(n) && n % 1 !== 0;
@@ -29,14 +30,14 @@ function isFloat(n) {
 class StarRating extends React.Component {
 
   static propTypes = {
-    name: React.PropTypes.string.isRequired,
-    caption: React.PropTypes.string,
-    totalStars: React.PropTypes.number.isRequired,
-    rating: React.PropTypes.number,
-    onRatingClick: React.PropTypes.func,
-    disabled: React.PropTypes.bool,
-    editing: React.PropTypes.bool,
-    size: React.PropTypes.number
+    name: PropTypes.string.isRequired,
+    caption: PropTypes.string,
+    totalStars: PropTypes.number.isRequired,
+    rating: PropTypes.number,
+    onRatingClick: PropTypes.func,
+    disabled: PropTypes.bool,
+    editing: PropTypes.bool,
+    size: PropTypes.number
   }
 
   static defaultProps = {
