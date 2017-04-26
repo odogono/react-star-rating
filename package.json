@@ -1,6 +1,6 @@
 {
-  "name": "react-star-rating",
-  "version": "1.4.2",
+  "name": "odgn-react-star-rating",
+  "version": "1.4.3",
   "description": "A simple star rating component built with React.",
   "main": "./dist/react-star-rating.min.js",
   "scripts": {
@@ -10,13 +10,20 @@
     "test": "karma start",
     "prepublish": "npm run build"
   },
+  "homepage": "https://github.com/odogono/react-star-rating",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/odogono/react-star-rating.git"
+  },
   "author": "Cameron J Roe <cameronjroe@gmail.com> (http://cameronjroe.com/)",
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.0",
-    "react": "^15.3.2",
-    "react-addons-test-utils": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "classnames": "^2.2.0"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-addons-test-utils": "^15.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.0",
